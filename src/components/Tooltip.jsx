@@ -28,7 +28,7 @@ Tooltip.tapEChartsOption = (option, props, context) => {
         // trigger: 'axis',
         trigger: hasAxis ? 'axis' : 'item',
         axisPointer: {
-          type: 'none',
+          type: 'shadow',
         },
       },
       props

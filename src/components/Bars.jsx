@@ -42,7 +42,7 @@ Bars.tapEChartsOption = (option, props, context) => {
     return _merge(
       {
         type: 'bar',
-        barWidth: (!stack && barsSeriesCount) > 1 ? 6 : 20,
+        // barWidth: (!stack && barsSeriesCount) > 1 ? 6 : 20,
         stack: typeof stack === 'boolean' ? defaultBarsStackKey : stack,
         itemStyle: {
           color: Array.isArray(color) ? ({ dataIndex }) => color[dataIndex] : color,

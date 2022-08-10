@@ -63,8 +63,18 @@ function App() {
   return (
     <div className="App">
         <input />
-        <BarChart data={data}>
-          <YAxis axisLabel={value => `${value / 1000}K`} minInterval={500000} splitLine={false} />
+        <BarChart 
+          data={data} 
+          option={{
+            grid: {
+              left: '3%',
+              right: '4%',
+              bottom: '13%',
+              containLabel: true
+            }
+          }}
+        >
+          <YAxis axisLabel={value => `${value / 1000}K`} minInterval={500000} />
           <Bars name="休眠客户" />
           <Bars name="新客" />
           <Bars name="非品牌用户" />
